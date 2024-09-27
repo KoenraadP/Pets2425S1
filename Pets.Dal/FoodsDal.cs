@@ -13,7 +13,9 @@ namespace Pets.Dal
             {
                 try
                 {
+                    // Brand opzoeken in tabel van Brands
                     Brand b = db.Brands.Find(brandId);
+                    // Brand instellen bij food product
                     f.Brand = b;
                     db.Foods.Add(f);
                     return db.SaveChanges() > 0;
