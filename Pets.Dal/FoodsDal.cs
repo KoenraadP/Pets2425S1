@@ -5,15 +5,17 @@ using System.Linq;
 
 namespace Pets.Dal
 {
-    public static class BrandsDal
+    public static class FoodsDal
     {
-        public static bool Create(Brand b)
+        public static bool Create(Food f, Guid brandId)
         {
             using (var db = new PetsDbContext())
             {
                 try
                 {
-                    db.Brands.Add(b);
+                    Brand b = db.Brands.Find(brandId);
+                    f.Brand = b;
+                    db.Foods.Add(f);
                     return db.SaveChanges() > 0;
                 }
                 catch
@@ -23,19 +25,11 @@ namespace Pets.Dal
             }
         }
 
-        public static List<Brand> Read()
+        public static List<Food> Read()
         {
             using (var db = new PetsDbContext())
             {
-                return db.Brands.ToList();
-            }
-        }
-
-        public static Brand Read(Guid brandId)
-        {
-            using (var db = new PetsDbContext())
-            {
-                return db.Brands.Find(brandId);
+                return db.Foods.ToList();
             }
         }
     }

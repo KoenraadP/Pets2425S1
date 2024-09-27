@@ -41,5 +41,18 @@ namespace Pets.Entities
             AnimalType = animalType;
             Brand = brand;
         }
+
+        public Product(Guid productId, string name, string description,
+            decimal price, int amountInStock, AnimalType animalType)
+        {
+            ProductId = productId;
+            Name = name;
+            Description = description;
+            Price = price;
+            AmountInStock = amountInStock;
+            // bool heeft als default value false
+            if (AmountInStock > 0) InStock = true;
+            AnimalType = animalType;
+        }
     }
 }

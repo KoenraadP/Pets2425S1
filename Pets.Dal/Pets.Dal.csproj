@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BrandsDal.cs" />
+    <Compile Include="FoodsDal.cs" />
     <Compile Include="Migrations\202409270923034_CreateDb.cs" />
     <Compile Include="Migrations\202409270923034_CreateDb.Designer.cs">
       <DependentUpon>202409270923034_CreateDb.cs</DependentUpon>

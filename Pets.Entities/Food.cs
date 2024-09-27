@@ -19,5 +19,11 @@ namespace Pets.Entities
             Weight = weight;
             AgeCategory = ageCategory;
         }
+
+        public Food(Guid productId, string name, string description, decimal price, int amountInStock, AnimalType animalType, double weight, AgeCategory ageCategory) : base(productId, name, description, price, amountInStock, animalType)
+        {
+            Weight = weight;
+            AgeCategory = ageCategory;
+        }
     }
 }
