@@ -57,9 +57,18 @@
     <Compile Include="Migrations\202409271113448_CreateDb.Designer.cs">
       <DependentUpon>202409271113448_CreateDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202409271144007_BasicValidation.cs" />
+    <Compile Include="Migrations\202409271144007_BasicValidation.Designer.cs">
+      <DependentUpon>202409271144007_BasicValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202409271159185_WeightValidation.cs" />
+    <Compile Include="Migrations\202409271159185_WeightValidation.Designer.cs">
+      <DependentUpon>202409271159185_WeightValidation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PetsDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToysDal.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Pets.Entities\Pets.Entities.csproj">
@@ -74,6 +83,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202409271113448_CreateDb.resx">
       <DependentUpon>202409271113448_CreateDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409271144007_BasicValidation.resx">
+      <DependentUpon>202409271144007_BasicValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409271159185_WeightValidation.resx">
+      <DependentUpon>202409271159185_WeightValidation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
