@@ -53,9 +53,9 @@
   <ItemGroup>
     <Compile Include="BrandsDal.cs" />
     <Compile Include="FoodsDal.cs" />
-    <Compile Include="Migrations\202409270923034_CreateDb.cs" />
-    <Compile Include="Migrations\202409270923034_CreateDb.Designer.cs">
-      <DependentUpon>202409270923034_CreateDb.cs</DependentUpon>
+    <Compile Include="Migrations\202409271113448_CreateDb.cs" />
+    <Compile Include="Migrations\202409271113448_CreateDb.Designer.cs">
+      <DependentUpon>202409271113448_CreateDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PetsDbContext.cs" />
@@ -72,8 +72,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202409270923034_CreateDb.resx">
-      <DependentUpon>202409270923034_CreateDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202409271113448_CreateDb.resx">
+      <DependentUpon>202409271113448_CreateDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

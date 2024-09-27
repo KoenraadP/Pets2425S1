@@ -12,4 +12,11 @@
         Cat,
         Dog
     }
+
+    public enum ToySize
+    {
+        Small,
+        Medium,
+        Large
+    }
 }
