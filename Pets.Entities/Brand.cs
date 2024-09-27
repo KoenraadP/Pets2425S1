@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Pets.Entities
 {
     public class Brand
     {
+        [Key]
         public Guid BrandId { get; set; }
         public string Name { get; set; }
         // link met products --> een brand kan meerdere products maken/leveren

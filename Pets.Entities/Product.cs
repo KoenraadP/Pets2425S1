@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Pets.Entities
 {
@@ -8,6 +9,7 @@ namespace Pets.Entities
     {
         // Guid of int zijn beide OK voor id
         // int is makkelijker, Guid is meer future proof
+        [Key]
         public Guid ProductId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
