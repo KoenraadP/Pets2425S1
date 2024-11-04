@@ -11,6 +11,7 @@ namespace Pets.Dal
         }
 
         public DbSet<Food> Foods { get; set; }
+        public DbSet<Toy> Toys { get; set; }
         public DbSet<Brand> Brands { get; set; }
 
         // Stap 1: Migraties inschakelen --> dit moet je slechts één keer doen

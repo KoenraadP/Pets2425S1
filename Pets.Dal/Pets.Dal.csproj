@@ -57,9 +57,14 @@
     <Compile Include="Migrations\202409270923034_CreateDb.Designer.cs">
       <DependentUpon>202409270923034_CreateDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202411041643582_AddToys.cs" />
+    <Compile Include="Migrations\202411041643582_AddToys.Designer.cs">
+      <DependentUpon>202411041643582_AddToys.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PetsDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToysDal.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Pets.Entities\Pets.Entities.csproj">
@@ -74,6 +79,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202409270923034_CreateDb.resx">
       <DependentUpon>202409270923034_CreateDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411041643582_AddToys.resx">
+      <DependentUpon>202411041643582_AddToys.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
