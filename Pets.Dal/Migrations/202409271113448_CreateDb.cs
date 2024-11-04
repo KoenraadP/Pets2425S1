@@ -29,6 +29,7 @@
                         AnimalType = c.Int(nullable: false),
                         Weight = c.Double(),
                         AgeCategory = c.Int(),
+                        ToySize = c.Int(),
                         Discriminator = c.String(nullable: false, maxLength: 128),
                         Brand_BrandId = c.Guid(),
                     })

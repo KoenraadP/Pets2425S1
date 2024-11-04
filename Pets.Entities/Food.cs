@@ -1,10 +1,12 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Pets.Entities
 {
     public class Food : Product
     {
         // extra properties enkel voor Food
+        [Required]
         public double Weight { get; set; }
         // AgeCategory is een enum
         public AgeCategory AgeCategory { get; set; }

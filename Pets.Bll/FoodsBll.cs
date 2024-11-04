@@ -12,7 +12,9 @@ namespace Pets.Bll
         {
             Food f = new Food(Guid.NewGuid(), name, description, price,
                 amountInStock, AnimalType.Cat,weight, AgeCategory.Adult);
+            // Brand id string omzetten naar Guid
             Guid brandId = Guid.Parse(selectedBrand);
+            // Brand Guid id meegeven naar Dal Create methode
             return FoodsDal.Create(f, brandId);
         }
 

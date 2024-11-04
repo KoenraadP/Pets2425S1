@@ -8,6 +8,7 @@ namespace Pets.Entities
     {
         [Key]
         public Guid BrandId { get; set; }
+        [Required]
         public string Name { get; set; }
         // link met products --> een brand kan meerdere products maken/leveren
         public List<Product> Products { get; set; }

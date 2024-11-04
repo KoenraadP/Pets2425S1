@@ -53,9 +53,17 @@
   <ItemGroup>
     <Compile Include="BrandsDal.cs" />
     <Compile Include="FoodsDal.cs" />
-    <Compile Include="Migrations\202409270923034_CreateDb.cs" />
-    <Compile Include="Migrations\202409270923034_CreateDb.Designer.cs">
-      <DependentUpon>202409270923034_CreateDb.cs</DependentUpon>
+    <Compile Include="Migrations\202409271113448_CreateDb.cs" />
+    <Compile Include="Migrations\202409271113448_CreateDb.Designer.cs">
+      <DependentUpon>202409271113448_CreateDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202409271144007_BasicValidation.cs" />
+    <Compile Include="Migrations\202409271144007_BasicValidation.Designer.cs">
+      <DependentUpon>202409271144007_BasicValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202409271159185_WeightValidation.cs" />
+    <Compile Include="Migrations\202409271159185_WeightValidation.Designer.cs">
+      <DependentUpon>202409271159185_WeightValidation.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202411041643582_AddToys.cs" />
     <Compile Include="Migrations\202411041643582_AddToys.Designer.cs">
@@ -77,8 +85,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202409270923034_CreateDb.resx">
-      <DependentUpon>202409270923034_CreateDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202409271113448_CreateDb.resx">
+      <DependentUpon>202409271113448_CreateDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409271144007_BasicValidation.resx">
+      <DependentUpon>202409271144007_BasicValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409271159185_WeightValidation.resx">
+      <DependentUpon>202409271159185_WeightValidation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202411041643582_AddToys.resx">
       <DependentUpon>202411041643582_AddToys.cs</DependentUpon>

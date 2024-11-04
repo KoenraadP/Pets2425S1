@@ -1,9 +1,7 @@
 ﻿using Pets.Entities;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
 namespace Pets.Dal
 {
@@ -15,7 +13,9 @@ namespace Pets.Dal
             {
                 try
                 {
+                    // Brand opzoeken in tabel van Brands
                     Brand b = db.Brands.Find(brandId);
+                    // Brand instellen bij food product
                     t.Brand = b;
                     db.Toys.Add(t);
                     return db.SaveChanges() > 0;

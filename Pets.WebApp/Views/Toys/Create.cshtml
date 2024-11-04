@@ -56,12 +56,13 @@
                 </div>
             </div>
         </div>
-
+        
+        @* dropdown list voor brands/merken *@
         <div class="form-group">
             @Html.LabelFor(model => model.Brand, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("SelectedBrand", (SelectList)ViewBag.AllBrands, "--Select Brand--", new { @class = "form-control" })
-                @*<span asp-validation-for="Activities" class="text-danger"></span>*@
+                @Html.ValidationMessageFor(model => model.Brand, "", new { @class = "text-danger" })
             </div>
         </div>
 

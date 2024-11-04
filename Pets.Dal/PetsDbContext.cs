@@ -5,14 +5,22 @@ namespace Pets.Dal
 {
     internal class PetsDbContext : DbContext
     {
-        public PetsDbContext() : base(@"Data Source=.\SQLEXPRESS;Initial Catalog=Pets2425S1;Integrated Security=True")
+        // eigen toestel
+        //public PetsDbContext() : base(@"Data Source=.\SQLEXPRESS;Initial Catalog=Pets2425S1;Integrated Security=True")
+        //{
+
+        //}
+
+        // creo toestel
+        public PetsDbContext() : base(@"Data Source =.\sqlexpress; Initial Catalog=Pets2425S1;User ID = creo; Password = creo")
         {
-            
+
         }
 
         public DbSet<Food> Foods { get; set; }
         public DbSet<Toy> Toys { get; set; }
         public DbSet<Brand> Brands { get; set; }
+        public DbSet<Toy> Toys { get; set; }
 
         // Stap 1: Migraties inschakelen --> dit moet je slechts één keer doen
         // EntityFramework6\Enable-Migrations
