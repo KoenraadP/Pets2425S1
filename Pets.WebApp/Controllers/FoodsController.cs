@@ -30,12 +30,22 @@ namespace Pets.WebApp.Controllers
         [HttpPost]
         // de selectedBrand is eigenlijk een Guid maar momenteel nog in string vorm
         public ActionResult Create(string name, string description, decimal price, 
-            int amountInStock, bool inStock, double weight, string selectedBrand)
-        {
-            FoodsBll.Create(name, description, price, amountInStock, 
-                inStock, weight, selectedBrand);
+            int amountInStock, bool inStock, double weight, string brandId)
+        {           
 
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                FoodsBll.Create(name, description, price, amountInStock,
+                    inStock, weight, brandId);
+                return RedirectToAction("Index");
+            }
+
+            List<Brand> brands = BrandsBll.Read();
+            SelectList brandsList = new SelectList(brands, "BrandId", "Name");
+            ViewBag.AllBrands = brandsList;
+
+            return View();
+
         }
     }
 }

@@ -7,13 +7,13 @@ namespace Pets.Dal.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class WeightValidation : IMigrationMetadata
+    public sealed partial class AddToySize : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(WeightValidation));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddToySize));
         
         string IMigrationMetadata.Id
         {
-            get { return "202409271159185_WeightValidation"; }
+            get { return "202411041701329_AddToySize"; }
         }
         
         string IMigrationMetadata.Source

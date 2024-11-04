@@ -7,13 +7,13 @@ namespace Pets.Dal.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class CreateDb : IMigrationMetadata
+    public sealed partial class BrandValidation : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateDb));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(BrandValidation));
         
         string IMigrationMetadata.Id
         {
-            get { return "202409271113448_CreateDb"; }
+            get { return "202411042040341_BrandValidation"; }
         }
         
         string IMigrationMetadata.Source

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Pets.Entities.Validators;
 
 namespace Pets.Entities
 {
@@ -21,6 +22,10 @@ namespace Pets.Entities
         // AnimalType is een enum
         public AnimalType AnimalType { get; set; }
         // Brand is een andere 'entity' class
+        // Guid apart linken voor makkelijkere validatie 
+        [Required(ErrorMessage = "Please select a brand.")]
+        [GuidNotEmpty(ErrorMessage = "Please select a valid brand.")]
+        public Guid BrandId { get; set; }
         public Brand Brand { get; set; }
 
         // lege constructors zijn nodig voor sommige bewerkingen

@@ -28,12 +28,12 @@ namespace Pets.WebApp.Controllers
         }
 
         [HttpPost]
-        // de selectedBrand is eigenlijk een Guid maar momenteel nog in string vorm
+        // de brandId is eigenlijk een Guid maar momenteel nog in string vorm
         public ActionResult Create(string name, string description, decimal price,
-            int amountInStock, bool inStock, string selectedBrand)
+            int amountInStock, bool inStock, string brandId)
         {
             ToysBll.Create(name, description, price, amountInStock,
-                inStock, selectedBrand);
+                inStock, brandId);
 
             return RedirectToAction("Index");
         }

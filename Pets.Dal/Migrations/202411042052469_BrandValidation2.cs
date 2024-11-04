@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class WeightValidation : DbMigration
+    public partial class BrandValidation2 : DbMigration
     {
         public override void Up()
         {

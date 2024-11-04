@@ -53,21 +53,21 @@
   <ItemGroup>
     <Compile Include="BrandsDal.cs" />
     <Compile Include="FoodsDal.cs" />
-    <Compile Include="Migrations\202409271113448_CreateDb.cs" />
-    <Compile Include="Migrations\202409271113448_CreateDb.Designer.cs">
-      <DependentUpon>202409271113448_CreateDb.cs</DependentUpon>
+    <Compile Include="Migrations\202411041701329_AddToySize.cs" />
+    <Compile Include="Migrations\202411041701329_AddToySize.Designer.cs">
+      <DependentUpon>202411041701329_AddToySize.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202409271144007_BasicValidation.cs" />
-    <Compile Include="Migrations\202409271144007_BasicValidation.Designer.cs">
-      <DependentUpon>202409271144007_BasicValidation.cs</DependentUpon>
+    <Compile Include="Migrations\202411042040341_BrandValidation.cs" />
+    <Compile Include="Migrations\202411042040341_BrandValidation.Designer.cs">
+      <DependentUpon>202411042040341_BrandValidation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202409271159185_WeightValidation.cs" />
-    <Compile Include="Migrations\202409271159185_WeightValidation.Designer.cs">
-      <DependentUpon>202409271159185_WeightValidation.cs</DependentUpon>
+    <Compile Include="Migrations\202411042052469_BrandValidation2.cs" />
+    <Compile Include="Migrations\202411042052469_BrandValidation2.Designer.cs">
+      <DependentUpon>202411042052469_BrandValidation2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202411041643582_AddToys.cs" />
-    <Compile Include="Migrations\202411041643582_AddToys.Designer.cs">
-      <DependentUpon>202411041643582_AddToys.cs</DependentUpon>
+    <Compile Include="Migrations\202411042054099_BrandValidation3.cs" />
+    <Compile Include="Migrations\202411042054099_BrandValidation3.Designer.cs">
+      <DependentUpon>202411042054099_BrandValidation3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PetsDbContext.cs" />
@@ -85,17 +85,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202409271113448_CreateDb.resx">
-      <DependentUpon>202409271113448_CreateDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202411041701329_AddToySize.resx">
+      <DependentUpon>202411041701329_AddToySize.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202409271144007_BasicValidation.resx">
-      <DependentUpon>202409271144007_BasicValidation.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202411042040341_BrandValidation.resx">
+      <DependentUpon>202411042040341_BrandValidation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202409271159185_WeightValidation.resx">
-      <DependentUpon>202409271159185_WeightValidation.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202411042052469_BrandValidation2.resx">
+      <DependentUpon>202411042052469_BrandValidation2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202411041643582_AddToys.resx">
-      <DependentUpon>202411041643582_AddToys.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202411042054099_BrandValidation3.resx">
+      <DependentUpon>202411042054099_BrandValidation3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
